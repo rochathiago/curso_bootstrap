@@ -121,6 +121,7 @@ header, .navbar{
     font-size: 17px;
     color: #444;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #about-list{
