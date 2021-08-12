@@ -18,8 +18,21 @@ function createCircle(circleID, order, value){
     })
 
     circle.animate(1.0);
+}
 
+function filterBox(opt, boxes){
+    if(opt == "all"){
+        $(boxes).fadeIn();
+    }else{
+        $(boxes).each(function(){
+            if($(this).attr("opt") != opt){
+                $(this).fadeOut("slow");
+            }else{
+                $(this).fadeIn();
+            }
 
+        });
+    }
 }
 
 
@@ -45,10 +58,21 @@ $(document).ready(function(){
         }
     });
 
-
+    //Parallax
     setTimeout(function(){
         $("#data-area").parallax({imageSrc: 'img/cidadeparallax.png'});
         $("#apply-area").parallax({imageSrc: 'img/pattern.png'});
     }, 250);
+
+    //Filtro do Portfólio
+    $(".filter-btn").on("click", function(){
+        let opt = $(this).attr("opt");
+        let boxes = $(".project-box");
+
+        $('.filter-btn').removeClass("active");
+        $(this).addClass("active");
+
+        filterBox(opt, boxes);
+    });
     
 });
