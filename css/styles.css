@@ -493,3 +493,107 @@ header, .navbar{
         font-size: 16px;
     }
 }
+
+@media(max-width: 426px){
+    
+    /* slider */
+    #mainSlider{
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption{
+        top: 5%;
+    }       
+
+    #mainSlider .carousel-caption h2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }   
+
+    #mainSlider .carousel-caption p{
+        display: none;
+    }  
+
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+    /* about */
+    .main-title{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .main-title::after{
+        top: 50px;
+        width: 30%;        
+        left: 35%
+    }    
+
+    #about-area img{
+        margin-top:  0;
+        margin-bottom: 30px;
+    }
+
+    /* service */
+    #services-area .service-box{
+        margin-bottom: 20px;
+    }
+
+    /* data */
+    .circle-box{
+        width: 50%;
+        
+    }
+
+    /* time */
+    #team-area .col-md-3{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* apply */
+    #apply-area{
+        height: auto;
+    }
+
+    #company-img{
+        display: none;
+    }
+
+    /* filter */
+    #portfolio-area .filter-btn{
+        margin: 20px;
+    }
+
+    .project-box{
+        width: 50%;
+    }
+
+    /* news */
+
+    #new-area p{
+        font-size: 16px;
+    }
+
+    #email-input{
+        width: 80%;
+    }
+
+    /* CTA */
+    #call-area p, #call-area #call-btn{
+        font-size: 14px;
+        letter-spacing: 0;
+        margin: 0;
+        width: 50%;
+    }    
+
+    #contact-area p{
+        margin-bottom: 5px;
+    }
+
+    #contact-area .contact-box{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}   

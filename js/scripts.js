@@ -74,5 +74,17 @@ $(document).ready(function(){
 
         filterBox(opt, boxes);
     });
-    
+
+    // Scroll para seções seção
+    let navBtn = $(".nav-item");
+
+    $(navBtn).click(function(e){        
+        e.preventDefault();        
+        let scrollTo = $(this).attr('scroll-to')
+        console.log(scrollTo);
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#" + scrollTo).offset().top - 70
+        }, 1500);
+    }); 
+
 });
